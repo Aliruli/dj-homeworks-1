@@ -14,16 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from app.views import home, current_time, workdir
 
-from app.views import home_view
+app_name = 'app'
 
 
+"""Ниже приведена переменная, содержащая в себе список путей."""
 urlpatterns = [
-    path('', home_view, name='home'),
-    # Раскомментируйте код, чтобы данные урлы 
+    path('', home, name='home'),
+    # Раскомментируйте код, чтобы данные урлы
     # обрабатывались Django
-    # path('current_time/', time_view, name='time'),
-    # path('workdir/', workdir_view, name='workdir'),
+    path('current_time/', current_time, name='current_time'),
+    path('workdir/', workdir, name='workdir'),
     path('admin/', admin.site.urls),
 ]
