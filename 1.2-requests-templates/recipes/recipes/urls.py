@@ -16,6 +16,17 @@ Including another URLconf
 
 from django.urls import path
 
+from calculator.views import omlet, pasta, buter
+
+
+"""Здесь реализована переменная, содержащая в себе пути."""
 urlpatterns = [
-    # здесь зарегистрируйте вашу view-функцию
+    path('omlet/', omlet, name='omlet'),
+    path('omlet/<a>/', omlet),
+
+    path('pasta/', pasta, name='pasta'),
+    path('pasta/<a>', pasta, name='pasta'),
+
+    path('buter/', buter, name='buter'),
+    path('buter/<a>', buter),
 ]
