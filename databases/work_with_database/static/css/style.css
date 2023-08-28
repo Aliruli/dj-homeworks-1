@@ -1,11 +1,13 @@
-.header {
-    margin-top: 30px;
-    margin-bottom: 50px;
+.phone-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .phone {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
 }
 
 .sort-block .sort-item {
