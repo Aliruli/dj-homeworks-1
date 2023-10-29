@@ -54,8 +54,8 @@ DATABASES = {
         'NAME': 'netology_import_phones',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
-        'PORT': '5433',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
