@@ -4,7 +4,7 @@ from .models import Article, Tag, Scope
 
 class ScopeInline(admin.TabularInline):
     model = Scope
-    extra = 1
+    extra = 0
 
 
 @admin.register(Article)
